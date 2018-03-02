@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T12:12:34+01:00
+
+====== bootstrap ======
+Created piątek 02 marzec 2018
+TWorcy podzielili wszstkie udzadzenia na 5 kategorii
+
+ 	Extra small
+<576px 	Small
+≥576px 	Medium
+≥768px 	Large
+≥992px 	Extra large
+≥1200px
+Max container width 	None (auto) 	540px 	720px 	960px 	1140px
+Class prefix 	.col- 	.col-sm- 	.col-md- 	.col-lg- 	.col-xl-
+
