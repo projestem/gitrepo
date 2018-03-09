@@ -1,0 +1,11 @@
+body {
+  background-image: url('he1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/*style użytkownika */
+.mark, mark {
+  background-color: rgb(182, 48, 208);
+}
