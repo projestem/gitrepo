@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-19T09:54:10+01:00
+
+====== Grafika komputerowa ======
+Created poniedziałek 19 marzec 2018
+
+przstrzen kolorow
+grafika rastrona prezentacja borazi za pomoca pionowo poziomej siatki kodpowiednoi kolorwancynjc pisklseli na monitaorze komputera drukarce lub inny m ruzadzeniu wuksciowym 
