@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-07T13:45:05+02:00
+
+====== C++ ======
+algorytmika
+Created piątek 07 września 2018
+
+===== Podstawowe typy danych w C++ =====
+
+Typ	Typowy rozmiar w bajtach	 zakres
+char	1								-128 ... 127
+int 		2, 4 lub 8						-32 768 .. 32767
