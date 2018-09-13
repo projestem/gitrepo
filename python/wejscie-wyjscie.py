@@ -4,6 +4,9 @@
 #  szablon.py
 
 
+def dodaj():
+    print(a + b)
+
 def main(args):
     # a = 0 # inicjacja zmiennej
     a = int(input('Podaj liczbę'))
