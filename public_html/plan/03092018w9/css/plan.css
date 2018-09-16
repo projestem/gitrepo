@@ -24,7 +24,8 @@ th{
     font-size: 13px;
 	background-color:#f00;
 	color:#fff;
-	font-size:13px}
+	text-align: center;
+}
 td.g{ /* godzina */
 	background-color:#eaf4f0;
 	color:#003090;
@@ -59,4 +60,8 @@ a.k{ /* klasa */
 @media print{
 .tabtytul{ /* nag³ówek do druku */
 	display:none}
+}
+.table{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
