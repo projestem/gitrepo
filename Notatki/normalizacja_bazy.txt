@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-24T07:35:51+02:00
+
+====== normalizacja bazy ======
+Created poniedziałek 24 września 2018
+
+https://www.sqlpedia.pl/projektowanie-i-normalizacja-bazy-danych/
