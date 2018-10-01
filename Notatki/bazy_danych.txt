@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-10-01T07:15:34+02:00
+
+====== bazy danych ======
+Created poniedziałek 01 października 2018
+
+PRIMARY KEY - klucz glowny
+AUTONUMERIC - pole bedzie numerowane automatyczne przez baze danych
+UNIQUE wartosci w kolumnie musza byc unikalne
+NOT NULL - nie moze byc pustych wartosc
+DEFAULT wartosc domyslna: "" (pusty ciag)
+FOREIGN KEY klucz obcy
+nazwa_pola REFERENCEStabela(inne_pole)
+CHECK num1 > num2 - tekstowanie wartosci
+
+ON DELETE CASCADE usuwamu dane o kims to info o jego produkcie tez znikna
+
+ON DELETE SET NULL/SET DEFAULT
+
+Typy Danych:
+VARCHAR
+REAL
+NUMERIC, DECIMAL
+BOOLEAN
