@@ -1,14 +1,14 @@
 body{
-	background-color:#f00;
+	background-color:#ef3531;
 	color:#fff;
 	font:13px verdana,sans-serif;
 	margin:10}
-p,td{font:11px verdana,sans-serif}
-a:link{color:#000099}
-a:visited{color:#5377b6}
-a:hover{color:#000099;text-decoration:none}
+p,td{font:12px verdana,sans-serif}
+a:link{color:#d9edf7}
+a:visited{color:#eee}
+a:hover{color:#333;text-decoration:none}
 /* odnoœniki (lista rozwijalna) */
-a.pp:link,a.pp:visited {color:#000099;font-weight:bold}
+a.pp:link,a.pp:visited {color:#d9edf7;font-weight:bold}
 a.pp:hover{text-decoration:none}
 /* element na liœcie */
 p.el{margin-top:0;margin-bottom:0.5em}
