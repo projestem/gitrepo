@@ -1,26 +1,12 @@
 /*
  * horner.cpp
  * 
- * Copyright 2018  <>
  * 
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- * 
+ * w(x) = 2x^3 + 3x^2+ 5x + 4 -- 6 mnożeń i 3 dodawania
+ * w(x) = x(2x^2 + 3x + 5) + 4
+ * w(x) = x(x(2x+3)+ 5) + 4 -- 3 mnożenia i 3 dodawania
  * 
  */
-
 #include <iostream>
 
 using namespace std;
@@ -32,8 +18,14 @@ void drukujw(int st, float tbwsp[]){
     }	
     cout << tbwsp[i] << endl;
 }
-  
-    
+
+float horner_it(int st, float tbwsp[], float x){
+    float wynik = tbwsp[0];    
+    for (int i = 1; i < st + 1; i++){
+        wynik = wynik * x + tbwsp[i];
+        
+    }
+    return wynik;
 }
 
 int main(int argc, char **argv)
@@ -57,6 +49,5 @@ int main(int argc, char **argv)
     drukujw(stopien, tbwsp);
     cout << "\ndla x = " << x << " wynosi: " << horner_it(stopien, tbwsp, x);
     cout << endl;
-    
 	return 0;
 }
