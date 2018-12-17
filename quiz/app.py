@@ -2,20 +2,25 @@
 # -*- coding: utf-8 -*-
 #
 #  app.py
-from flask import Flask
-from flask import render_template
+
+from flask import Flask, g
+from flask import render_template, request
+from model_orm import *
+
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return render_template('index.html')
+@app.before_request
+def before_request():
+    g.db = baza
+    g.db.connect()
+    
+@app.after_request
+def after_request(response):
+    g.db.close()
+    return response
 
-@app route("/strona")
-def strona()
-    return render_template
-def main(args):
-    return 0
+
+
 
 if __name__ == '__main__':
-    import sys
-    sys.exit(main(sys.argv))
+app.run(debug=True)
