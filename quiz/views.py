@@ -2,31 +2,31 @@
 # -*- coding: utf-8 -*-
 #
 #  views.py
-#  
-
-from flask import Flask, g
+ 
+from flask import Flask
 from flask import render_template, request
-from model_orm import *
-
+from modele import Kategoria, Pytanie, Odpowiedz
+ 
 app = Flask(__name__)
-
-#widom domyslny
+ 
+# widok domyślny
 @app.route("/")
 def hello():
-    return "<h1>Witaj na serwerze!</h1><h2>Aplikacja quiz</h2>"
+    return render_template('index.html')
     
-@app.route("/quiz") #definicja zasobu
-def quiz():
+@app.route("/lista")
+def lista():
     pytania = Pytanie.select()
-    return render_template('quiz.html', query = pytania)
-    
-@app.route("/klasa")
-def klasa():
-    return render_template('klasa.html')
-
+    return render_template('lista.html', pytania=pytania)
+ 
+@app.route("/quiz")
+def quiz():
+    pytania = Pytanie.select().join(Odpowiedz).distinct()
+    return render_template('quiz.html', pytania=pytania)
+ 
 def main(args):
     return 0
-
+ 
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
